@@ -1,0 +1,51 @@
+<!DOCTPYE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+<style>
+    body{
+        background-color: lightyellow;
+    }
+
+    .bgcolor--blue {
+        background-color: lightblue;
+    }
+
+    .bgcolor--red {
+        background-color: lightcoral
+    }
+
+    .bgcolor--green {
+        background-color: lightgreen;
+    }
+</style>    
+</head>
+<body>
+    <div>
+    <button class="btn_bgb">파랑</button>
+    <button class="btn_bgr">빨강</button>
+    <button class="btn_bgg">초록</button>
+    </div>
+    <script>
+        const btn_bgb = document.querySelector('.btn_bgb');
+        btn_bgb.addEventListener('click', function () {
+            document.body.classList.toggle('bgcolor--blue');
+        })
+        
+        const btn_bgr = document.querySelector('.btn_bgr');
+        btn_bgr.addEventListener('click', function () {
+            document.body.classList.toggle('bgcolor--red');
+        })
+
+
+        const btn_bgg = document.querySelector('.btn_bgg');
+        btn_bgg.addEventListener('click', function () {
+            document.body.classList.toggle('bgcolor--green');
+        })
+
+    </script>
+</body> 
+</html>
